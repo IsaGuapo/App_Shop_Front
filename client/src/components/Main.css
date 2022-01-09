@@ -1,0 +1,22 @@
+.container_home{
+    display: flex;
+    background-image:url('../../public/assets/img/mountain.jpg') ;
+    background-size: cover;
+    background-position-y: -100px;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 3rem;
+    
+}
+
+h5{
+    padding: 50px;
+    font-size: 3rem;
+    
+}
+
+.text_home {
+    font-style: italic;
+}
