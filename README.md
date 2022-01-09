@@ -1,6 +1,6 @@
 # AppShop Rock Climbing
 Demo App store online 
-(parte Back con BBDD en Mongodb y parte Front con React)
+(Unión del proyecto con la parte Back con BBDD en Mongodb y parte Front con React)
 
 Getting started 🚀
 Copia el codigo de github: 
