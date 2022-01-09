@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+// import About from './About';
 
 const Nav = () => {
     return (
@@ -17,11 +18,11 @@ const Nav = () => {
                                 <span className="visually-hidden">(current)</span>
                             </a>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <a className="nav-link" href="#">Tienda</a>
-                        </li>
+                        </li> */}
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Sobre Nosotros</a>
+                            <a className="nav-link" href="./About">Sobre Nosotros</a>
                         </li>
                     </ul>
                 </div>
