@@ -1,10 +1,12 @@
 import React from 'react'
 import Cardproduct from './Cardproduct';
+import './Products.css'
 
 const Products = ({productsArr}) => {
+
 // para pintar los productos 
-    return (<section className='col-12 p-5 row'>
-    {productsArr.map((product, i) => <Cardproduct productsArr={product} key={product._id} />)}
+    return (<section className='container_products'>
+          {productsArr.map((product, i) => <Cardproduct productsArr={product} key={product._id} />)}
       </section>) 
     
 }
