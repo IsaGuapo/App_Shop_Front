@@ -4,7 +4,6 @@ import './Main.css';
 import Products from './Products';
 import axios from 'axios';
 
-// import axios from 'axios';
 
 const Main = () => {
     //  estado de mis articulos
@@ -87,9 +86,9 @@ const sortRating = () => {
 // //ordenar por fabricante
 // const sortFab = () => {
 //     if (sort === "fab"){
-//         setSort("-rating")
+//         setSort("fab")
 //     }  else {
-//         setSort("rating")
+//         setSort("fab")
 //     }
 //  }
 
@@ -114,13 +113,13 @@ const sortRating = () => {
                     <li className={`page-item ${page === 1 ? "disabled" : null }`}>
                     <button className="page-link" onClick={previewPage}>&laquo;</button>
                     </li>
-                    <li className="page-item active">
+                    <li className={`page-item ${page === 1 ? "active" :null}`}>
                     <button className="page-link " onClick={page1}>1</button>
                     </li>
-                    <li className="page-item">
+                    <li className={`page-item ${page === 2 ? "active" :null}`}>
                     <button className="page-link" onClick={page2} >2</button>
                     </li>
-                    <li className="page-item">
+                    <li className={`page-item ${page === 1 ? "active" :null}`}>
                     <button className="page-link" onClick={page3} >3</button>
                     </li>
                     {/* ternario para que no vaya mas adelante de la ultima pagina (la3)  */}

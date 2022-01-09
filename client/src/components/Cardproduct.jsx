@@ -1,15 +1,19 @@
 import React from 'react';
 import accounting from 'accounting';
+import './Products.css'
 
 
 const Cardproduct = ({productsArr}) => {
-  const {name, price,rating, img, fab:{name:nameFab, address, cif }} = productsArr;
+  const {name, price,rating, img_url, fab:{name:nameFab, address, cif }} = productsArr;
     
   return (
       <section className="card bg-light mb-3" >
         <div className="card-body">
           <h4 className="card-title">{name}</h4>
-          <img src={img} alt='' />
+          <div className='div_img d-flex justify-content-center'>
+            <img className='img_url' src={img_url} alt='sin imagen del articulo' />
+          </div>
+          
           <p className="card-text">{accounting.formatMoney(price, "€", 2, ".", ",")}</p>
             <div className='div_card mt-5 border-top'>
               <p className="card-text">{nameFab}</p>
