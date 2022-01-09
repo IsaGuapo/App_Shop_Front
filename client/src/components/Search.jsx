@@ -16,10 +16,10 @@ const Search = ({setArticle}) => {
             return;
         } else {
             setError(false); //para que devuelva el estado a false
-            setArticle(valueInput); //envia lo que escriba el usuario por el input. Se lo envia al padre MAIN
+            setArticle(valueInput);//envia lo que escriba el usuario por el input. Se lo envia al padre MAIN
+            setValueInput("") ;
         }
-        //
-        
+        //   
     }
 
     return (
@@ -27,7 +27,7 @@ const Search = ({setArticle}) => {
             <form className="d-flex col-md-8"
             onSubmit={handelSubmit}>
                 <input className="me-sm-2 col-md-6 " type="text" placeholder="Buscar producto" 
-                onChange={e => setValueInput(e.target.value)}/>
+                onChange={e => setValueInput(e.target.value)} value={valueInput}/>
                 <button className="btn btn-secondary my-2 my-sm-0 col-md-2" type="submit">Buscar</button>
             </form>
             {error ? <Error/>: null} 
